@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+
+:root {
+    --corClara: #ebeba8;
+    --fonte-padrao: Arial,Helvetica,Verdana,sans-serif;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Android';
+    src: url('./fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--corClara);
+    margin: 0;
+}
+
+header {
+    background-image: linear-gradient(#042940,#005C53);
+    margin:auto;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 6em 1em 0em 0em; 
+    color: white;
+}
+
+p{
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+header>nav,header>h1,header>p{
+    margin: auto;
+    padding: 0.5em;
+}
+
+header>h1{
+    font-size: 3em;
+    font-family: 'Android';
+    font-weight: 400;
+}
+
+
+
+header>nav {
+    text-align: left;
+    margin-top: 4em;
+}
+
+nav>a{
+    color: #9FC131;
+    padding: 0.5em;
+    margin-bottom: 2em;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav>a:hover{
+    color: #D6D58E;
+    background-color: #042940;
+    border-radius: 0.8em;
+}
+
+main {
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 0 0 1em 1em;
+    background-color: white;
+    margin-top: 0;
+    padding: 1.50em;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 29%);
+}
+
+img{
+    width: 100%;
+}
+
+div.video{
+    margin-bottom: 30px;
+    margin: 0 -24px 30px -24px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 57.5%;
+    
+
+    
+}
+
+
+
+div.video>iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main>h1 {
+    font-family: 'Android';
+    font-weight: 500;
+    color: #042940;
+}
+
+section.normal>h2{
+    background-image: linear-gradient(to right, #005C53, #00000000);
+    padding: 0.25em;
+    color: #9FC131;
+    font-family: 'Android';
+    font-weight: 500;
+}
+
+section#extra {
+    background-color: #9FC131;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.37);
+}
+
+section#extra>ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+section#extra>h2{
+    background-color: #005C53;
+    color: white;
+    margin: -10px -10px 0 -10px; /*<--margin negativa fi que doidera !!!!!!!!*/
+    padding: 10px;
+    border-radius: 5px 5px 0 0 ;
+}
+
+main>p{
+    text-align: center;
+}
+
+main>img{
+    align-items: center;
+}
+
+a.text{
+    background-color: #005c53b6;
+    border-radius: 0.4em;
+    color: white;
+    padding: 0.1em;
+    text-decoration: none;
+}
+
+a.text::after{
+    content: '🔗';
+}
+
+
+footer {
+    background-color: #042940;
+    padding: 0.2em;
+    color: white;
+    text-align: center;
+    margin-top: 5em;
+}
